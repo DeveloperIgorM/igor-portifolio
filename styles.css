@@ -1,0 +1,175 @@
+.main-container {
+    height: auto;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    background-color: #323232;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    background-color: #666;
+    box-shadow: 0px 1px 3px rgba(143, 142, 142, 0.863);
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    color: #8661dd;
+}
+
+div.nav-icons {
+    display: flex;
+    gap: 20px;
+
+    .fa-github {
+        max-width: 35px;
+        width: 100%;
+    }
+
+    .fa-in {
+        max-width: 35px;
+        width: 100%;
+    }
+
+    .fa-insta {
+        max-width: 35px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+
+
+    .intro-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top:6rem;
+
+        h4 {
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin: 0;
+            
+        }
+
+    }
+
+}
+
+.iconProfile {
+    width: 400px;
+    margin-top: 20px;
+}
+
+
+
+
+
+#body .sobre {
+    display: flex;
+}
+
+.sobre h2 {
+    text-align: left;
+    margin-left: 10rem;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #474747 ;
+    padding-top: 2rem;
+}
+
+.profile-bg {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #a91cd4, #780ae6);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-img {
+    max-width: 161px;
+    max-height: 171px;
+    width: 100%;
+    height: 100%;
+    border-radius: 46%;
+    object-fit: cover;
+    margin-top: 29px;
+}
+
+.sobre .my-name h1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-sobre {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title-sobre h2 {
+    font-size: 30px;
+    margin: 0px 0 20px 0;
+    text-align: left;
+}
+
+.title-sobre p {
+    font-size: 18px;
+    width: 570px;
+    height: auto;
+    text-align: left;
+    margin: 0 auto;
+    line-height: 26px;
+}
+
+.type-profission {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.type-profission h2 {
+    color: #a854fc;
+    font-size: 28px;
+}
+
+#footer .footer {
+    background-color: #666;
+    height: 20px;
+}
