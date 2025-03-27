@@ -1,175 +1,223 @@
 .main-container {
-    height: auto;
+	height: auto;
 }
-
 body {
-    font-family: Helvetica, sans-serif;
-    text-align: center;
-    color: #fff;
-    background-color: #323232;
-    padding: 0;
-    margin: 0;
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	color: #fff;
+	background-color: #323232;
+	padding: 0;
+	margin: 0;
+}
+section#header {
+	.nav {
+		display: flex;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+		backdrop-filter: blur(10px); /* Efeito de desfoque */
+		justify-content: space-around;
+		align-items: center;
+		font-size: 18px;
+		z-index: 1000;
+	}
+
+	.nav ul {
+		display: flex;
+		list-style: none;
+		gap: 2rem;
+	}
+
+	.nav ul li a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.nav ul li a:hover {
+		color: #8661dd;
+	}
+
+	div.nav-icons {
+		display: flex;
+		gap: 20px;
+
+		.fa-github {
+			max-width: 35px;
+			width: 100%;
+		}
+
+		.fa-in {
+			max-width: 35px;
+			width: 100%;
+		}
+
+		.fa-insta {
+			max-width: 35px;
+			width: 100%;
+		}
+	}
 }
 
-.nav {
-    display: flex;
-    background-color: #666;
-    box-shadow: 0px 1px 3px rgba(143, 142, 142, 0.863);
-    justify-content: space-around;
-    align-items: center;
-    font-size: 18px;
+section#intro {
+	.intro {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 4rem;
+		height: 600px;
 
+		box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
+
+		.intro-1 {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-top: 6rem;
+
+			h4 {
+				margin-bottom: 0;
+			}
+
+			h1 {
+				font-size: 55px;
+				margin: 0;
+			}
+		}
+	}
+
+	.iconProfile {
+		width: 400px;
+        padding-bottom: 1rem;
+	}
 }
 
-.nav ul {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+section#sobre {
+	box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
+
+	.sobre h2 {
+		text-align: left;
+		margin-left: 10rem;
+	}
+	.profile-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: #474747;
+		height: 600px;
+	}
+
+	.profile-img {
+		max-width: 272px;
+		max-height: 360px;
+		width: 100%;
+		height: 100%;
+        margin-top: 4rem;
+		box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
+		border-radius: 20px;
+	}
+
+	.sobre .my-name h1 {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.title-sobre {
+		text-align: center;
+	}
+
+	.title-sobre h2 {
+		font-size: 40px;
+		color: #a854fc;
+		text-align: left;
+	}
+
+	.title-sobre p {
+		font-size: 18px;
+		width: 570px;
+		height: auto;
+		text-align: left;
+		margin: 0 auto;
+		line-height: 26px;
+	}
+
+	.type-profission {
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.type-profission h2 {
+		color: #a854fc;
+		font-size: 18px;
+	}
 }
 
-.nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+section#projetos {
+		display: flex;
+        flex-direction: column;
+		justify-content: center;
+        align-items: center;
 
-.nav ul li a:hover {
-    color: #8661dd;
-}
-
-div.nav-icons {
-    display: flex;
-    gap: 20px;
-
-    .fa-github {
-        max-width: 35px;
-        width: 100%;
+	
+	.title-projetos h2 {
+      
+		color: #a854fc;
+		font-size: 40px;
+		text-align: center;
+        margin: 7rem 0px 7rem 0px;
+	}
+    .projetos-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        height: auto;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
     }
-
-    .fa-in {
-        max-width: 35px;
-        width: 100%;
-    }
-
-    .fa-insta {
-        max-width: 35px;
-        width: 100%;
-    }
-}
-
-
-
-
-
-.intro {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 4rem;
-    margin-bottom: 6rem;
-
-
-    .intro-1 {
+    
+    .card-projeto {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin-top:6rem;
-
-        h4 {
-            margin-bottom: 0;
-        }
-
-        h1 {
-            font-size: 55px;
-            margin: 0;
-            
-        }
+        justify-content: center;
+        background: #222;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        width: 320px;
+        height: 400px;
+        text-align: center;
+        color: white;
+        transition: transform 0.3s ease-in-out;
 
     }
-
-}
-
-.iconProfile {
-    width: 400px;
-    margin-top: 20px;
-}
-
-
-
-
-
-#body .sobre {
-    display: flex;
-}
-
-.sobre h2 {
-    text-align: left;
-    margin-left: 10rem;
-}
-
-.profile-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #474747 ;
-    padding-top: 2rem;
-}
-
-.profile-bg {
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(135deg, #a91cd4, #780ae6);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.profile-img {
-    max-width: 161px;
-    max-height: 171px;
-    width: 100%;
-    height: 100%;
-    border-radius: 46%;
-    object-fit: cover;
-    margin-top: 29px;
-}
-
-.sobre .my-name h1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.title-sobre {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.title-sobre h2 {
-    font-size: 30px;
-    margin: 0px 0 20px 0;
-    text-align: left;
-}
-
-.title-sobre p {
-    font-size: 18px;
-    width: 570px;
-    height: auto;
-    text-align: left;
-    margin: 0 auto;
-    line-height: 26px;
-}
-
-.type-profission {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.type-profission h2 {
-    color: #a854fc;
-    font-size: 28px;
+    
+    .card-projeto:hover {
+        transform: scale(1.05);
+    }
+    
+    .card-projeto video {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+    
+    .card-projeto h3 {
+        font-size: 1.2rem;
+        padding-bottom: 30px;
+        color: #a854fc;
+    }
+    
+    .card-projeto p {
+        font-size: 0.9rem;
+        color: #ddd;
+    }
+    
 }
 
 #footer .footer {
-    background-color: #666;
-    height: 20px;
+	background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+	backdrop-filter: blur(10px); /* Efeito de desfoque */
+	height: 25px;
+    z-index: 1000;
 }
