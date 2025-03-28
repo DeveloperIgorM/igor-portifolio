@@ -43,6 +43,7 @@ section#header {
 		gap: 20px;
 
 		.fa-github {
+		
 			max-width: 35px;
 			width: 100%;
 		}
@@ -50,6 +51,7 @@ section#header {
 		.fa-in {
 			max-width: 35px;
 			width: 100%;
+			
 		}
 
 		.fa-insta {
@@ -88,7 +90,7 @@ section#intro {
 
 	.iconProfile {
 		width: 400px;
-        padding-bottom: 1rem;
+		padding-bottom: 1rem;
 	}
 }
 
@@ -113,7 +115,7 @@ section#sobre {
 		max-height: 360px;
 		width: 100%;
 		height: 100%;
-        margin-top: 4rem;
+		margin-top: 4rem;
 		box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 		border-radius: 20px;
 	}
@@ -154,70 +156,152 @@ section#sobre {
 }
 
 section#projetos {
-		display: flex;
-        flex-direction: column;
-		justify-content: center;
-        align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-	
 	.title-projetos h2 {
-      
 		color: #a854fc;
 		font-size: 40px;
 		text-align: center;
-        margin: 7rem 0px 7rem 0px;
+		margin: 7rem 0px 7rem 0px;
 	}
-    .projetos-container {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        height: auto;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-    }
-    
-    .card-projeto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: #222;
-        padding: 15px;
-        border-radius: 12px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        width: 320px;
-        height: 400px;
-        text-align: center;
-        color: white;
-        transition: transform 0.3s ease-in-out;
+	.projetos-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		height: auto;
+		margin-bottom: 4rem;
+	}
 
-    }
-    
-    .card-projeto:hover {
-        transform: scale(1.05);
-    }
-    
-    .card-projeto video {
-        width: 100%;
-        border-radius: 8px;
-        margin-bottom: 30px;
-    }
-    
-    .card-projeto h3 {
-        font-size: 1.2rem;
-        padding-bottom: 30px;
-        color: #a854fc;
-    }
-    
-    .card-projeto p {
-        font-size: 0.9rem;
-        color: #ddd;
-    }
-    
+	.card-projeto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background: #222;
+		padding: 15px;
+		border-radius: 12px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		width: 320px;
+		height: 417px;
+		text-align: center;
+		color: white;
+	}
+
+	.card-projeto:hover {
+		transform: scale(1.05);
+	}
+
+	.card-projeto video {
+		width: 100%;
+		border-radius: 8px;
+		margin-bottom: 30px;
+	}
+
+	.card-projeto h3 {
+		font-size: 1.2rem;
+		margin: 29px 0px;
+		color: #a854fc;
+	}
+}
+
+.card-projeto p {
+	font-size: 0.9rem;
+	color: #ddd;
+}
+
+.footer-card {
+	margin-bottom: 2rem;
+
+	.language-icon {
+		max-width: 35px;
+		width: 100%;
+	}
+}
+
+section#softskills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #474747;
+	height: auto;
+
+	.skills-container {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 4rem;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.header-skills {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+		}
+		.header-skills h2 {
+			color: #a854fc;
+			font-size: 35px;
+			text-align: center;
+			margin: 7rem 0px 7rem 0px;
+		}
+
+		.cards-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+
+			.card-skills {
+				display: flex;
+				flex-direction: column;
+				background: #222;
+				padding: 15px;
+				border-radius: 12px;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+				width: 200px;
+				height: 300px;
+				gap: 30px;
+				text-align: center;
+				
+
+				.header-card h3 {
+					margin-top: 30px;
+				}
+
+				.body-card {
+					display: flex;
+					justify-content: center;
+
+					.language-icon {
+						max-width: 100px;
+						width: 100%;
+					}
+					.footer-card {
+						display: flex;
+
+						.card-projeto p {
+							font-size: 0.9rem;
+							color: #ddd;
+						}
+					}
+				}
+				.card-skills:hover {
+					transform: scale(1.05);
+				}
+			}
+		}
+	}
 }
 
 #footer .footer {
 	background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
 	backdrop-filter: blur(10px); /* Efeito de desfoque */
 	height: 25px;
-    z-index: 1000;
+	z-index: 1000;
 }
