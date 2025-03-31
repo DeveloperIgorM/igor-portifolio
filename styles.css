@@ -19,7 +19,7 @@ section#header {
 		backdrop-filter: blur(10px); /* Efeito de desfoque */
 		justify-content: space-around;
 		align-items: center;
-		font-size: 18px;
+		font-size: 17px;
 		z-index: 1000;
 	}
 
@@ -40,22 +40,20 @@ section#header {
 
 	div.nav-icons {
 		display: flex;
-		gap: 20px;
+		gap: 15px;
 
 		.fa-github {
-		
-			max-width: 35px;
+			max-width: 25px;
 			width: 100%;
 		}
 
 		.fa-in {
-			max-width: 35px;
+			max-width: 25px;
 			width: 100%;
-			
 		}
 
 		.fa-insta {
-			max-width: 35px;
+			max-width: 25px;
 			width: 100%;
 		}
 	}
@@ -118,6 +116,9 @@ section#sobre {
 		margin-top: 4rem;
 		box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 		border-radius: 20px;
+	}
+	.profile-img:hover {
+		transform: scale(1.12);
 	}
 
 	.sobre .my-name h1 {
@@ -206,19 +207,18 @@ section#projetos {
 		margin: 29px 0px;
 		color: #a854fc;
 	}
-}
+	.card-projeto p {
+		font-size: 0.9rem;
+		color: #ddd;
+	}
 
-.card-projeto p {
-	font-size: 0.9rem;
-	color: #ddd;
-}
+	.footer-card {
+		margin-bottom: 2rem;
 
-.footer-card {
-	margin-bottom: 2rem;
-
-	.language-icon {
-		max-width: 35px;
-		width: 100%;
+		.language-icon {
+			max-width: 25px;
+			width: 100%;
+		}
 	}
 }
 
@@ -228,6 +228,7 @@ section#softskills {
 	justify-content: center;
 	background-color: #474747;
 	height: auto;
+	box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 
 	.skills-container {
 		display: flex;
@@ -268,18 +269,17 @@ section#softskills {
 				height: 300px;
 				gap: 30px;
 				text-align: center;
-				
 
 				.header-card h3 {
 					margin-top: 30px;
 				}
-
+				
 				.body-card {
 					display: flex;
 					justify-content: center;
-
+					
 					.language-icon {
-						max-width: 100px;
+						max-width: 80px;
 						width: 100%;
 					}
 					.footer-card {
@@ -291,17 +291,102 @@ section#softskills {
 						}
 					}
 				}
-				.card-skills:hover {
-					transform: scale(1.05);
-				}
+			}
+			.card-skills:hover {
+				transform: scale(1.09);
 			}
 		}
 	}
 }
 
-#footer .footer {
-	background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
-	backdrop-filter: blur(10px); /* Efeito de desfoque */
-	height: 25px;
-	z-index: 1000;
+section#contato {
+	.contato-container {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 250px;
+
+		.phone {
+			display: flex;
+			flex-direction: column;
+
+			.mail {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				justify-content: flex-start;
+			}
+			.whats {
+				display: flex;
+				gap: 20px;
+				align-items: center;
+				justify-content: flex-start;
+				width: 100%;
+			}
+		}
+		.language-icon {
+			max-width: 25px;
+			width: 100%;
+		}
+	}
+	.title-contato {
+		color: #a854fc;
+		font-size: 35px;
+		text-align: center;
+		margin: 7rem 0px 7rem 0px;
+	}
 }
+
+section#footer {
+	display: flex;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+	height: 35px;
+	bottom: 0;
+	align-items: center;
+	justify-content: center;
+
+	.footer ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+
+	}
+	.footer ul li a {
+		color: #fff;
+		text-decoration: none;
+	}
+	.footer ul li a:hover {
+		color: #8661dd;
+	}
+}
+
+.main-content {
+	right: 3%;
+	max-width: fit-content;
+	position: fixed;
+	top: 80%;
+	transform: translateX(90px);
+	animation: ani 3s ease both;
+	z-index: 9999;
+}
+
+@keyframes ani {
+	from {
+			transform: translateX(90px); /* Posição inicial */
+	}
+	to {
+			transform: translateX(10px); /* Posição final */
+	}
+}
+
+.main-content a {
+	display: block;
+}
+
+.whats {
+	width: 50px;
+}
+
+
