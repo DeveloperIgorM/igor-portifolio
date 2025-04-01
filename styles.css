@@ -64,8 +64,8 @@ section#intro {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		margin-top: 4rem;
-		height: 600px;
+		margin-top: 5rem;
+		height: 635px;
 
 		box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 
@@ -73,7 +73,7 @@ section#intro {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
-			margin-top: 6rem;
+			padding-bottom: 6rem;
 
 			h4 {
 				margin-bottom: 0;
@@ -88,24 +88,24 @@ section#intro {
 
 	.iconProfile {
 		width: 400px;
-		padding-bottom: 1rem;
+		padding-bottom: 10rem;
+	}
+	.iconProfile:hover {
+		transform: scale(1.1);
 	}
 }
 
 section#sobre {
 	box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
+	height: 650px;
 
-	.sobre h2 {
-		text-align: left;
-		margin-left: 10rem;
-	}
 	.profile-container {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-evenly;
 		background-color: #474747;
-		height: 600px;
+		height: 100%;
 	}
 
 	.profile-img {
@@ -113,7 +113,6 @@ section#sobre {
 		max-height: 360px;
 		width: 100%;
 		height: 100%;
-		margin-top: 4rem;
 		box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 		border-radius: 20px;
 	}
@@ -128,6 +127,7 @@ section#sobre {
 
 	.title-sobre {
 		text-align: center;
+		padding-bottom: 4rem;
 	}
 
 	.title-sobre h2 {
@@ -161,19 +161,19 @@ section#projetos {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 801px;
 
 	.title-projetos h2 {
 		color: #a854fc;
-		font-size: 40px;
+		font-size: 35px;
 		text-align: center;
-		margin: 7rem 0px 7rem 0px;
+		margin: 4rem 0px 4rem 0px;
 	}
 	.projetos-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 20px;
 		height: auto;
 		margin-bottom: 4rem;
 	}
@@ -187,7 +187,6 @@ section#projetos {
 		border-radius: 12px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 		width: 320px;
-		height: 417px;
 		text-align: center;
 		color: white;
 	}
@@ -196,10 +195,11 @@ section#projetos {
 		transform: scale(1.05);
 	}
 
-	.card-projeto video {
+	.body-card video {
+		display: flex;
 		width: 100%;
 		border-radius: 8px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 
 	.card-projeto h3 {
@@ -208,7 +208,7 @@ section#projetos {
 		color: #a854fc;
 	}
 	.card-projeto p {
-		font-size: 0.9rem;
+		font-size: 18px;
 		color: #ddd;
 	}
 
@@ -248,7 +248,7 @@ section#softskills {
 			color: #a854fc;
 			font-size: 35px;
 			text-align: center;
-			margin: 7rem 0px 7rem 0px;
+			margin: 5rem 0px 5rem 0px;
 		}
 
 		.cards-container {
@@ -273,11 +273,11 @@ section#softskills {
 				.header-card h3 {
 					margin-top: 30px;
 				}
-				
+
 				.body-card {
 					display: flex;
 					justify-content: center;
-					
+
 					.language-icon {
 						max-width: 80px;
 						width: 100%;
@@ -351,7 +351,6 @@ section#footer {
 		display: flex;
 		list-style: none;
 		margin: 0;
-
 	}
 	.footer ul li a {
 		color: #fff;
@@ -374,10 +373,10 @@ section#footer {
 
 @keyframes ani {
 	from {
-			transform: translateX(90px); /* Posição inicial */
+		transform: translateX(90px); /* Posição inicial */
 	}
 	to {
-			transform: translateX(10px); /* Posição final */
+		transform: translateX(10px); /* Posição final */
 	}
 }
 
@@ -388,5 +387,3 @@ section#footer {
 .whats {
 	width: 50px;
 }
-
-
