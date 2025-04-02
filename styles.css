@@ -213,11 +213,25 @@ section#projetos {
 	}
 
 	.footer-card {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 
-		.language-icon {
-			max-width: 25px;
-			width: 100%;
+		.footer-language {
+			display: flex;
+			flex-direction: column;
+			
+
+			.l-icons {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				gap: 6px;
+				margin-bottom: 15px;
+
+				.language-icon {
+					max-width: 25px;
+					width: 100%;
+				}
+			}
 		}
 	}
 }
