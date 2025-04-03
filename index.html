@@ -3,8 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Meu Portfólio</title>
+		<title>iG // Portifólio</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon" />
 	</head>
 	<div class="main-content">
 		<a href="https://wa.me/5515997227398?" target="_blank">
@@ -24,9 +26,19 @@
 			</ul>
 
 			<div class="nav-icons">
-				<a href="https://github.com/DeveloperIgorM" target="_blank" rel="noopener" title="GitHub"><img src="assets/images/icons/github-sign.png" class="fa-github" /></a>
-				<a href="https://www.linkedin.com/in/igor-matheus-b51348252/" target="_blank" rel="noopener" title="Linkedin"><img src="assets/images/icons/in1.png" class="fa-in" /></a>
-				<a href="https://www.instagram.com/igoor_math3us/?next=%2F" target="_blank" rel="noopener" title="Instagram"><img src="assets/images/icons/inst.png" class="fa-insta" /></a>
+				<ul>
+					<li>
+						<a href="https://github.com/DeveloperIgorM" target="_blank" rel="noopener" title="GitHub">
+							<i class="fa-brands fa-github"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/igor-matheus-b51348252/" target="_blank" rel="noopener" title="Linkedin">
+							<i class="fa-brands fa-linkedin-in"></i>
+						</a>
+						<a href="https://www.instagram.com/igoor_math3us/?next=%2F" target="_blank" rel="noopener" title="Instagram">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</section>
@@ -69,13 +81,13 @@
 						</div>
 						<div class="body-card">
 							<video autoplay muted loop playsinline>
-								<source src="assets/images/videos/Projeto-Findbooks.mp4" type="video/mp4" />
+								<source src="assets/images/videos/find.mp4" type="video/mp4" />
 								Seu navegador não suporta vídeos.
 							</video>
 						</div>
 						<div class="footer-card">
 							<div class="footer-language">
-								<p>Um projeto para encontrar livros de forma intuitiva e dinâmica.</p>
+								<p>Um projeto para encontrar e cadastrar livros de forma intuitiva e dinâmica.</p>
 								<br />
 								<div class="l-icons">
 									<img src="assets/images/icons/c-sharp.png" title="C-sharp" class="language-icon" />
@@ -83,7 +95,7 @@
 									<img src="assets/images/icons/css.png" title="CSS" class="language-icon" />
 									<img src="assets/images/icons/js.png" title="JavaScript" class="language-icon" />
 								</div>
-								<a href="https://github.com/DeveloperIgorM" target="_blank" rel="noopener" title="GitHub">
+								<a href="https://github.com/DeveloperIgorM/Library-Findbooks" target="_blank" rel="noopener" title="GitHub">
 									<img src="assets/images/icons/github-sign.png" title="Acesso ao Repositório no GitHub" class="language-icon" style="width: 25px" />
 								</a>
 							</div>
@@ -165,6 +177,18 @@
 								<p>Foco em desenvolvimento backend e APIs.</p>
 							</div>
 						</div>
+						<div class="card-skills">
+							<div class="header-card">
+								<h3>Django</h3>
+							</div>
+							<div class="body-card">
+								<img src="assets/images/icons/django.png" title="Python" class="language-icon" />
+							</div>
+
+							<div class="footer-card">
+								<p>Framework web para Python, segue o padrão MVT (Model-View-Template) e oferece diversas funcionalidades integradas.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -186,6 +210,29 @@
 					</div>
 				</div>
 			</section>
+
+			<button id="backToTop" class="back-to-top" title="Voltar ao topo">↑</button>
+
+			<script>
+				document.addEventListener('DOMContentLoaded', function () {
+					const backToTopButton = document.getElementById('backToTop');
+
+					window.addEventListener('scroll', function () {
+						if (window.scrollY > 300) {
+							backToTopButton.style.display = 'flex';
+						} else {
+							backToTopButton.style.display = 'none';
+						}
+					});
+
+					backToTopButton.addEventListener('click', function () {
+						window.scrollTo({
+							top: 0,
+							behavior: 'smooth',
+						});
+					});
+				});
+			</script>
 		</body>
 	</section>
 
@@ -201,5 +248,3 @@
 		</footer>
 	</section>
 </html>
-
-<!--icone pyhon : <div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>-->

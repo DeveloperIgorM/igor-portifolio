@@ -21,6 +21,7 @@ section#header {
 		align-items: center;
 		font-size: 17px;
 		z-index: 1000;
+		font-weight: 550;
 	}
 
 	.nav ul {
@@ -36,26 +37,44 @@ section#header {
 
 	.nav ul li a:hover {
 		color: #8661dd;
+		transform: scale(1.1);
+	}
+	.nav-icons ul li {
+		display: flex;
+		flex-direction: row;
+		gap: 15px;
+	}
+	.nav-icons ul li a {
+		transition: transform 0.3s ease, color 0.3s ease;
 	}
 
-	div.nav-icons {
-		display: flex;
-		gap: 15px;
+	/* Cor padrão e tamanho dos ícones */
+	.fa-github {
+		font-size: 25px;
+	}
 
-		.fa-github {
-			max-width: 25px;
-			width: 100%;
-		}
+	.fa-linkedin-in {
+		font-size: 25px;
+	}
 
-		.fa-in {
-			max-width: 25px;
-			width: 100%;
-		}
+	.fa-instagram {
+		font-size: 25px;
+	}
 
-		.fa-insta {
-			max-width: 25px;
-			width: 100%;
-		}
+	/* Efeito hover com cores diferentes */
+	.fa-github:hover {
+		color: #8455f3;
+		transform: scale(1.1);
+	}
+
+	.fa-linkedin-in:hover {
+		color: #0a66c2;
+		transform: scale(1.1);
+	}
+
+	.fa-instagram:hover {
+		color: #db1115;
+		transform: scale(1.1);
 	}
 }
 
@@ -97,7 +116,7 @@ section#intro {
 
 section#sobre {
 	box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
-	height: 650px;
+	height: 697px;
 
 	.profile-container {
 		display: flex;
@@ -200,6 +219,7 @@ section#projetos {
 		width: 100%;
 		border-radius: 8px;
 		margin-bottom: 20px;
+		padding-top: 10px;
 	}
 
 	.card-projeto h3 {
@@ -218,14 +238,13 @@ section#projetos {
 		.footer-language {
 			display: flex;
 			flex-direction: column;
-			
 
 			.l-icons {
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
-				gap: 6px;
-				margin-bottom: 15px;
+				gap: 10px;
+				margin-bottom: 40px;
 
 				.language-icon {
 					max-width: 25px;
@@ -279,8 +298,8 @@ section#softskills {
 				padding: 15px;
 				border-radius: 12px;
 				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-				width: 200px;
-				height: 300px;
+				width: 220px;
+				height: 340px;
 				gap: 30px;
 				text-align: center;
 
@@ -324,6 +343,7 @@ section#contato {
 		.phone {
 			display: flex;
 			flex-direction: column;
+			font-weight: 550;
 
 			.mail {
 				display: flex;
@@ -375,8 +395,32 @@ section#footer {
 	}
 }
 
+.back-to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #8661dd;
+	color: rgb(7, 7, 7);
+	border: none;
+	border-radius: 50%;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.3s, transform 0.3s;
+	z-index: 99999;
+}
+
+.back-to-top:hover {
+	background-color: #6f37f1;
+	transform: scale(1.1);
+}
+
 .main-content {
-	right: 3%;
+	left: 3%;
 	max-width: fit-content;
 	position: fixed;
 	top: 80%;
@@ -387,7 +431,7 @@ section#footer {
 
 @keyframes ani {
 	from {
-		transform: translateX(90px); /* Posição inicial */
+		transform: translateX(-100px); /* Posição inicial */
 	}
 	to {
 		transform: translateX(10px); /* Posição final */
