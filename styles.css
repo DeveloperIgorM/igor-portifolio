@@ -80,38 +80,40 @@ section#header {
 }
 
 section#intro {
-	.intro {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		margin-top: 5rem;
-		height: 650px;
-
-		box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
-
-		.intro-1 {
+	height: 110vh;
+	.intro-container {
+		.intro {
 			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			padding-bottom: 6rem;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 3rem;
+			height: 110vh;
+			box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 
-			h4 {
-				margin-bottom: 0;
+			.intro-1 {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				padding-bottom: 6rem;
+
+				h4 {
+					margin-bottom: 0;
+				}
+
+				h1 {
+					font-size: 55px;
+					margin: 0;
+				}
 			}
 
-			h1 {
-				font-size: 55px;
-				margin: 0;
+			.iconProfile {
+				width: 400px;
+				padding-bottom: 10rem;
 			}
+			/* .iconProfile:hover {
+				transform: scale(1.1);
+			} */
 		}
-	}
-
-	.iconProfile {
-		width: 400px;
-		padding-bottom: 10rem;
-	}
-	.iconProfile:hover {
-		transform: scale(1.1);
 	}
 }
 
@@ -135,9 +137,6 @@ section#sobre {
 		height: 100%;
 		box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 		border-radius: 20px;
-	}
-	.profile-img:hover {
-		transform: scale(1.12);
 	}
 
 	.sobre .my-name h1 {
@@ -181,8 +180,7 @@ section#projetos {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 110vh;
-	margin-top: 4rem;
+	height: 103vh;
 
 	.title-projetos h2 {
 		color: #a854fc;
@@ -195,9 +193,8 @@ section#projetos {
 		justify-content: center;
 		width: 100%;
 		height: auto;
-		margin-bottom: 2rem;
-		gap:15px;
 
+		gap: 15px;
 	}
 
 	.card-projeto {
@@ -205,7 +202,6 @@ section#projetos {
 		flex-direction: row;
 		padding: 15px 0px;
 		border-radius: -1px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 		text-align: center;
 		color: white;
 		height: 400px;
@@ -253,6 +249,9 @@ section#projetos {
 					max-width: 30px;
 					width: 100%;
 				}
+				.language-icon:hover {
+					transform: scale(1.1);
+				}
 			}
 			.btn {
 				border-radius: 25px;
@@ -293,7 +292,7 @@ section#softskills {
 	flex-direction: column;
 	justify-content: center;
 	background-color: #474747;
-	height: auto;
+	height: 192vh;
 	box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 
 	.skills-container {
@@ -464,11 +463,10 @@ section#footer {
 
 @keyframes ani {
 	from {
-		transform: translateX(-100px); /* Posição inicial */
+		transform: translateX(-110px) translateY(30px); /* Inicia mais à esquerda e mais abaixo */
 	}
 	to {
-		transform: translateX(10px); /* Posição final */
-		transform: translateY(20px); /* Posição final */
+		transform: translateX(1px) translateY(30px); /* Posição final */
 	}
 }
 
@@ -479,7 +477,20 @@ section#footer {
 .whats {
 	width: 50px;
 }
-.tagcloud span i {
-	font-size: 2rem;
-	color: white; /* ou a cor que quiser */
+
+.intro-1,
+.iconProfile,
+.title-sobre,
+.profile-bg,
+.body-card,
+.footer-card,
+.header-skills,
+.cards-container,
+.title-contato,
+.phone
+
+
+
+{
+	visibility: hidden;
 }
