@@ -124,6 +124,7 @@ section#intro {
 .intro-container .intro img {
 	position: relative;
 	animation: flutuar 2s ease-in-out infinite alternate; 
+  animation-delay: 1s;
 }
 
 @keyframes flutuar {
@@ -157,6 +158,10 @@ section#sobre {
     box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
   }
+  .profile-img:hover {
+    transform: scale(1.05);
+    transition:  0.5s;
+  }
 
   .sobre .my-name h1 {
     display: flex;
@@ -183,15 +188,6 @@ section#sobre {
     line-height: 26px;
   }
 
-  .type-profission {
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .type-profission h2 {
-    color: #a854fc;
-    font-size: 18px;
-  }
 }
 
 section#projetos {
@@ -200,6 +196,7 @@ section#projetos {
   justify-content: center;
   align-items: center;
   height: 103vh;
+  overflow: hidden;
 
   .title-projetos h2 {
     color: #a854fc;
@@ -272,13 +269,14 @@ section#projetos {
           transform: scale(1.1);
         }
       }
+
       .btn {
         border-radius: 25px;
         font-weight: bold;
         cursor: pointer;
         text-decoration: none;
-        transition: 0.3s;
         display: inline-block;
+        
       }
 
       .btn.github {
@@ -301,8 +299,13 @@ section#projetos {
         color: #a855f7;
       }
 
-      .btn:hover {
-        opacity: 0.8;
+     .btn.github:hover {
+        transform: scale(1.1);
+        color:  #fff;
+      }
+      .btn.site:hover {
+        transform: scale(1.1);
+        color:  #fff;
       }
     }
   }
@@ -391,7 +394,7 @@ section#contato {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 250px;
+    height: 70vh;
 
     .phone {
       display: flex;
@@ -484,7 +487,7 @@ section#footer {
 
 @keyframes ani {
   from {
-    transform: translateX(-110px) translateY(30px); /* Inicia mais à esquerda e mais abaixo */
+    transform: translateX(-90px) translateY(30px); /* Inicia mais à esquerda e mais abaixo */
   }
   to {
     transform: translateX(1px) translateY(30px); /* Posição final */
@@ -498,15 +501,20 @@ section#footer {
 .whats {
   width: 50px;
 }
-
+.nav-logo,
+.nav-links,
+.nav-icons,
 .intro-1,
 .iconProfile,
 .title-sobre,
 .profile-bg,
+.title-projetos,
 .body-card,
 .footer-card,
+.skills-container,
 .header-skills,
 .cards-container,
+.card-skills,
 .title-contato,
 .phone {
   visibility: hidden;

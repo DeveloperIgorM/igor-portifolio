@@ -1,12 +1,45 @@
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
+// sr.reveal('.nav', {duration: 2000});
 
-sr.reveal('.intro-1, .iconProfile', {duration: 2000});
-
-sr.reveal('.profile-bg, .title-sobre, .body-card, .footer-card, .header-skills, .cards-container, .title-contato, .phone', {
+sr.reveal('.nav-logo, .nav-links, .nav-icons, .intro-1, .iconProfile', {
   duration: 1000,      // Tempo da animação (ms)
-  origin: 'top',    // Aparece vindo de baixo
+  origin: 'left',    // Aparece vindo de baixo
   distance: '50px',    // Distância que ele se move pra cima
   easing: 'ease-in-out',
   opacity: 0,           // Começa invisível e aparece
-  interval: 200
+});
+
+sr.reveal('.profile-bg, .title-sobre', {
+  duration: 1000,    
+  origin: 'left',    
+  distance: '50px',  
+  easing: 'ease-in-out',
+  opacity: 0,           
+  
+});
+
+sr.reveal('.title-projetos, .body-card, .footer-card', {
+  duration: 1000,    
+  origin: 'right',    
+  distance: '50px',  
+  easing: 'ease-in-out',
+  opacity: 0,           
+
+});
+
+sr.reveal('.skills-container, .header-skills, .cards-container, .card-skills', {
+  duration: 1000,    
+  origin: 'left',    
+  distance: '50px',  
+  easing: 'ease-in-out',
+  opacity: 0,           
+  
+});
+sr.reveal(' .title-contato, .phone', {
+  duration: 1000,    
+  origin: 'right',    
+  distance: '50px',  
+  easing: 'ease-in-out',
+  opacity: 0,           
+  
 });
