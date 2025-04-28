@@ -119,6 +119,18 @@ section#intro {
       }
      
     }
+    #typed {
+      display: inline-block;
+      text-align: left;
+      font-size: 36px;
+      color: #fff;
+    }
+    .typed-cursor {
+      color: rgb(143, 59, 246); /* Mude para qualquer cor que quiser */
+      font-size: 36px; /* (opcional) tamanho do cursor */
+    }
+    
+    
   }
 }
 .intro-container .intro img {

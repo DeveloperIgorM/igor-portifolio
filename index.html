@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>iG // Portifólio</title>
 		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -55,10 +56,24 @@
 					<div class="intro-1">
 						<h4>SEJA BEM VINDO ✌🏾</h4>
 						<h1>Eu sou Igor,</h1>
-						<h2>Desenvolvedor Full-stack</h2>
+						<h2><span id="typed"></span></h2>
 					</div>
 					<img src="assets/images/icons/iconProfile.png" class="iconProfile" />
 				</div>
+				<script>
+					var typed = new Typed('#typed', {
+						strings: ['Desenvolvedor Full-Stack'],
+						typeSpeed: 100, // velocidade de digitação
+						startDelay: 0, // sem atraso inicial
+						backSpeed: 0, // sem apagar (não vamos usar backspace)
+						smartBackspace: false, // nem precisa
+						startDelay: 2000,
+						loop: false, // não repetir
+						showCursor: true,
+						cursorChar: '|',
+						contentType: 'html',
+					});
+				</script>
 			</div>
 		</section>
 
@@ -99,7 +114,7 @@
 								<img src="assets/images/icons/sqlite.png" title="SQLITE" class="language-icon" />
 							</div>
 
-							<div class="btn" style="display: flex; gap: 9px; justify-content: center;">	
+							<div class="btn" style="display: flex; gap: 9px; justify-content: center">
 								<a href="https://github.com/DeveloperIgorM/Library-Findbooks" class="btn github" target="_blank">Github</a>
 								<a href="https://www.seusite.com.br" class="btn site" target="_blank">Site</a>
 							</div>
