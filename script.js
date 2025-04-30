@@ -18,7 +18,7 @@ sr.reveal('.profile-bg, .title-sobre', {
   
 });
 
-sr.reveal('.title-projetos, .body-card, .footer-card', {
+sr.reveal('.title-projetos, .body-card-project, .footer-card-project', {
   duration: 1000,    
   origin: 'right',    
   distance: '50px',  
@@ -27,7 +27,7 @@ sr.reveal('.title-projetos, .body-card, .footer-card', {
 
 });
 
-sr.reveal('.skills-container, .header-skills, .cards-container, .card-skills', {
+sr.reveal('.skills-container, .header-skills, .cards-container, .card-skills, .header-card,.body-card,.footer-card', {
   duration: 1000,    
   origin: 'left',    
   distance: '50px',  
@@ -43,3 +43,5 @@ sr.reveal(' .title-contato, .phone', {
   opacity: 0,           
   
 });
+
+
