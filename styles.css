@@ -335,17 +335,21 @@ section#softskills {
 
     .header-skills {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin-bottom: 3em;
+      margin-bottom: 13em;
     }
     .header-skills h2 {
       color: #a854fc;
       font-size: 35px;
       text-align: center;
-      margin-bottom: 5em;
+      margin: 0;
+    }
+    .header-skills h3 {
+      color:#acacac;
+      margin: 0;
     }
 
     .sphere-container {
