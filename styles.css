@@ -1,8 +1,9 @@
+
 .main-container {
   height: auto;
 }
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #fff;
   background-color: #130d1a;
@@ -10,13 +11,38 @@ body {
   margin: 0;
 }
 section#header {
-  .nav {
+  .navbar {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    font-size: 17px;
+    font-weight: 550;
+    z-index: 1000;
+  }
+  
+  .navbar .nav-link {
+    color: #868686;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #fff;
+    transform: scale(1.1);
+  }
+
+  .cv-link {
+    margin-bottom: 3px; /* ou margin: 10px 0; para margem vertical */
+  }
+
+
+  
+  
+  /* .nav {
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
     justify-content: space-around;
     align-items: center;
     font-size: 17px;
@@ -26,6 +52,7 @@ section#header {
     .nav-logo ul li a {
       list-style: none;
       color: #8661dd;
+      
     }
   }
 
@@ -41,7 +68,6 @@ section#header {
   }
 
   .nav ul li a:hover {
-    /* color: #8661dd; */
     color: #fff;
     transform: scale(1.1);
   }
@@ -55,7 +81,6 @@ section#header {
     transition: transform 0.3s ease, color 0.3s ease;
   }
 
-  /* Cor padrão e tamanho dos ícones */
   .fa-github {
     font-size: 25px;
   }
@@ -68,7 +93,6 @@ section#header {
     font-size: 25px;
   }
 
-  /* Efeito hover com cores diferentes */
   .fa-github:hover {
     color: #8455f3;
     transform: scale(1.1);
@@ -82,7 +106,7 @@ section#header {
   .fa-instagram:hover {
     color: #db1115;
     transform: scale(1.1);
-  }
+  } */
 }
 
 section#intro {
@@ -138,14 +162,14 @@ section#intro {
   animation-delay: 1s;
 }
 
-@keyframes flutuar {
+/* @keyframes flutuar {
   0% {
     top: 0;
   }
   100% {
     top: 60px;
   }
-}
+} */
 
 section#sobre {
   box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
@@ -324,7 +348,7 @@ section#softskills {
   flex-direction: column;
   justify-content: center;
   background-color: #17111d;
-  height: 118vh;
+  height: 131vh;
   box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 
   .skills-container {
@@ -349,7 +373,7 @@ section#softskills {
     }
     .header-skills h3 {
       color:#acacac;
-      margin: 0;
+      margin: 0 12em;
     }
 
     .sphere-container {

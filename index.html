@@ -1,361 +1,285 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iG // Portifólio</title>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  </head>
-  <div class="main-content">
-    <a href="https://wa.me/5515997227398?" target="_blank">
-      <img
-        class="whats"
-        src="assets\images\icons\whatsapp2.png"
-        alt="WhatsApp"
-      />
-    </a>
-  </div>
-  <section id="header">
-    <nav class="nav">
-      <div class="nav-logo">
-        <ul>
-          <li><a href="#">𝒊G</a></li>
-        </ul>
-      </div>
-      <div class="nav-links">
-        <ul>
-          <li><a href="#sobre">Sobre mim</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#softskills">Habilidades</a></li>
-          <li><a href="#contato">Fale comigo</a></li>
-        </ul>
-      </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>iG // Portifólio</title>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
 
-      <div class="nav-icons">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/DeveloperIgorM"
-              target="_blank"
-              rel="noopener"
-              title="GitHub"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/igor-matheus-b51348252/"
-              target="_blank"
-              rel="noopener"
-              title="Linkedin"
-            >
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/igoor_math3us/?next=%2F"
-              target="_blank"
-              rel="noopener"
-              title="Instagram"
-            >
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a
-              href="public/cv_igor_dev.pdf"
-              title="Curriculo"
-              download="Cv_igor_Matheus.pdf"
-              style="font-size: 21px"
-            >
-              CV
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-  <body>
-    <section id="intro">
-      <div class="intro-container">
-        <div class="intro">
-          <div class="intro-1">
-            <h4>SEJA BEM VINDO ✌🏾</h4>
-            <h1>Eu sou Igor,</h1>
-            <h2><span id="typed"></span></h2>
-          </div>
-          <img src="assets/images/icons/iconProfile.png" class="iconProfile" />
-        </div>
-        <script>
-          var typed = new Typed("#typed", {
-            strings: ["Desenvolvedor Full-Stack"],
-            typeSpeed: 50, // velocidade de digitação
-            startDelay: 1000,
-            loop: false, // não repetir
-            showCursor: true,
-            cursorChar: "|",
-            contentType: "html",
-          });
-        </script>
-      </div>
-    </section>
+		<!-- Bootstrap 5.3 CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous" />
 
-    <section id="sobre">
-      <div class="profile-container">
-        <div class="profile-bg">
-          <img src="assets/images/me.jpg" alt="Perfil" class="profile-img" />
-        </div>
-        <div class="title-sobre">
-          <h2>Sobre mim</h2>
-          <p>
-            Sou formado em Análise e Desenvolvimento de Sistemas e atuo como
-            desenvolvedor full-stack júnior, com foco em desenvolvimento web.
-            Iniciei minha trajetória na área de suporte técnico, onde desenvolvi
-            organização e pensamento analítico para a resolução de problemas.
-            Aos poucos, migrei para o desenvolvimento, adquirindo experiência no
-            frontend e backend. Atualmente, meu objetivo é me consolidar como
-            desenvolvedor full-stack, com ênfase no backend, aprofundando meus
-            conhecimentos em Python. Acredito que a melhor forma de crescer
-            profissionalmente é por meio de desafios, e cada projeto é uma
-            oportunidade para evoluir e aprimorar minhas habilidades. Estou
-            sempre em busca de novos desafios que me permitam expandir meu
-            domínio em Python e fortalecer minha atuação como full-stack.
-          </p>
-        </div>
-      </div>
-    </section>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" defer />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" defer />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	</head>
+	<div class="main-content">
+		<a href="https://wa.me/5515997227398?" target="_blank">
+			<img class="whats" src="assets\images\icons\whatsapp2.png" alt="WhatsApp" />
+		</a>
+	</div>
+	<section id="header">
+		<nav class="navbar navbar-expand-lg fixed-top bg-transparent px-4">
+			<div class="container-fluid">
+				<!-- Logo -->
+				<a class="navbar-brand text-purple fw-bold" href="#">𝒊G</a>
 
-    <section id="projetos">
-      <div class="projetos-container">
-        <div class="title-projetos">
-          <h2>Projetos</h2>
-        </div>
-        <div class="card-projeto">
-          <div class="body-card-project">
-            <video autoplay muted loop playsinline>
-              <source src="assets/images/videos/find.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeos.
-            </video>
-            <h3>FINDBOOKS</h3>
-          </div>
-          <div class="footer-card-project">
-            <p>
-              A FindBooks é um sistema que busca facilitar o acesso dos leitores
-              a diferentes bibliotecas em um ambiente web bem organizado. Dessa
-              forma, o sistema conecta bibliotecas à leitores. A principal
-              intenção é oferecer uma plataforma onde os usuários possam
-              verificar a disponibilidade de livros e conhecer novas
-              instituições, sendo para as bibliotecas uma vitrine para novos
-              leitores. O sistema busca ser informativo, simples, organizado e
-              eficiente.
-            </p>
-            <div class="footer-language">
-              <br />
-              <div class="l-icons">
-                <img
-                  src="assets/images/icons/c-sharp.png"
-                  title="C-SHARP"
-                  class="language-icon"
-                />
-                <img
-                  src="assets/images/icons/html.png"
-                  title="HTML"
-                  class="language-icon"
-                />
-                <img
-                  src="assets/images/icons/css.png"
-                  title="CSS"
-                  class="language-icon"
-                />
-                <img
-                  src="assets/images/icons/js.png"
-                  title="JAVASCRIPT"
-                  class="language-icon"
-                />
-                <img
-                  src="assets/images/icons/sqlite.png"
-                  title="SQLITE"
-                  class="language-icon"
-                />
-              </div>
+				<!-- Toggle para mobile -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-              <div
-                class="btn"
-                style="display: flex; gap: 9px; justify-content: center"
-              >
-                <a
-                  href="https://github.com/DeveloperIgorM/Library-Findbooks"
-                  class="btn github"
-                  target="_blank"
-                  >Github</a
-                >
-                <a
-                  href="https://www.seusite.com.br"
-                  class="btn site"
-                  target="_blank"
-                  >Site</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+				<!-- Links -->
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link text-secondary" href="#sobre">Sobre mim</a></li>
+						<li class="nav-item"><a class="nav-link text-secondary" href="#projetos">Projetos</a></li>
+						<li class="nav-item"><a class="nav-link text-secondary" href="#softskills">Habilidades</a></li>
+						<li class="nav-item"><a class="nav-link text-secondary" href="#contato">Fale comigo</a></li>
+					</ul>
 
-    <section id="softskills">
-      <div class="skills-container">
-        <div class="header-skills">
-          <h2>Tecnologias que fazem parte da minha jornada</h2>
-          <h3>Meu conjunto de habilidades técnicas: linguagens, frameworks e ferramentas que uso para construir interfaces, arquiteturas e experiências digitais.</h3>
-        </div>
+					<!-- Ícones -->
+					<ul class="navbar-nav d-flex flex-row align-items-center gap-2">
+						<li class="nav-item">
+							<a class="nav-link" href="https://github.com/DeveloperIgorM" target="_blank" title="GitHub">
+								<i class="fa-brands fa-github fa-2x"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.linkedin.com/in/igor-matheus-b51348252/" target="_blank" title="LinkedIn">
+								<i class="fa-brands fa-linkedin-in fa-2x"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="https://www.instagram.com/igoor_math3us/" target="_blank" title="Instagram">
+								<i class="fa-brands fa-instagram fa-2x"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link fw-bold fs-3 cv-link" href="public/Cv_igor.pdf" download>CV</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
 
-        <div class="sphere-container">
-          <div class="sphere" id="iconCloud">
-            <i class="devicon-html5-plain colored" title="HTML"></i>
-            <i class="devicon-css3-plain colored" title="CSS"></i>
-            <i class="devicon-javascript-plain colored"title="JAVASCRIPT" ></i>
-            <i class="devicon-typescript-plain colored" title="TYPESCRIPT"></i>
-            <i class="devicon-mysql-plain colored" title="MYSQL"></i>
-            <i class="devicon-python-plain colored" title="PYTHON"></i>
-            <i class="devicon-php-plain colored" title="PHP"></i>
-            <i class="devicon-csharp-plain colored" title="CSHARP"></i>
-            <i class="devicon-git-plain colored" title="GIT"></i>
-            <i class="devicon-angularjs-plain colored"title="ANGULAR"></i>
-            <i class="devicon-sqlite-plain colored" title="SQLITE"></i>
-            <i class="devicon-azure-plain colored" title="AZURE"></i>
-          </div>
-        </div>
+	<body>
+		<section id="intro">
+			<div class="intro-container">
+				<div class="intro">
+					<div class="intro-1">
+						<h4>SEJA BEM VINDO ✌🏾</h4>
+						<h1>Eu sou Igor,</h1>
+						<h2><span id="typed"></span></h2>
+						
+					</div>
+					<img src="assets/images/icons/iconProfile.png" class="iconProfile" />
+				</div>
+				<script>
+					var typed = new Typed('#typed', {
+						strings: ['Desenvolvedor Full-Stack'],
+						typeSpeed: 50, // velocidade de digitação
+						startDelay: 1000,
+						loop: false, // não repetir
+						showCursor: true,
+						cursorChar: '|',
+						contentType: 'html',
+					});
+				</script>
+			</div>
+		</section>
 
-        <script>
-          const icons = document.querySelectorAll("#iconCloud i");
-          const sphere = document.getElementById("iconCloud");
-          const radius = 200;
-          const total = icons.length;
+		<section id="sobre">
+			<div class="profile-container">
+				<div class="profile-bg">
+					<img src="assets/images/me.jpg" alt="Perfil" class="profile-img" />
+				</div>
+				<div class="title-sobre">
+					<h2>Sobre mim</h2>
+					<p>Sou formado em Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor full-stack, com foco em desenvolvimento web. Iniciei minha trajetória na área de suporte técnico, onde desenvolvi organização e pensamento analítico para a resolução de problemas. Aos poucos, migrei para o desenvolvimento, adquirindo experiência no front-end e back-end. Atualmente, meu objetivo é me consolidar como desenvolvedor full-stack, com ênfase em back-end, aprofundando meus conhecimentos em Python. Acredito que a melhor forma de crescer profissionalmente é por meio de desafios, e cada projeto é uma oportunidade para evoluir e aprimorar minhas habilidades. Estou sempre em busca de novos desafios que me permitam expandir meu domínio em Python e fortalecer minha atuação como full-stack.</p>
+				</div>
+			</div>
+		</section>
 
-          let mouseX = 0,
-            mouseY = 0;
-          let angleX = 0;
-          let angleY = 0;
+		<section id="projetos">
+			<div class="projetos-container">
+				<div class="title-projetos">
+					<h2>Projetos</h2>
+				</div>
+				<div class="card-projeto">
+					<div class="body-card-project">
+						<video autoplay muted loop playsinline>
+							<source src="assets/images/videos/find.mp4" type="video/mp4" />
+							Seu navegador não suporta vídeos.
+						</video>
+						<h3>FINDBOOKS</h3>
+					</div>
+					<div class="footer-card-project">
+						<p>A FindBooks é um sistema que busca facilitar o acesso dos leitores a diferentes bibliotecas em um ambiente web bem organizado. Dessa forma, o sistema conecta bibliotecas à leitores. A principal intenção é oferecer uma plataforma onde os usuários possam verificar a disponibilidade de livros e conhecer novas instituições, sendo para as bibliotecas uma vitrine para novos leitores. O sistema busca ser informativo, simples, organizado e eficiente.</p>
+						<div class="footer-language">
+							<br />
+							<div class="l-icons">
+								<img src="assets/images/icons/c-sharp.png" title="C-SHARP" class="language-icon" />
+								<img src="assets/images/icons/html.png" title="HTML" class="language-icon" />
+								<img src="assets/images/icons/css.png" title="CSS" class="language-icon" />
+								<img src="assets/images/icons/js.png" title="JAVASCRIPT" class="language-icon" />
+								<img src="assets/images/icons/sqlite.png" title="SQLITE" class="language-icon" />
+							</div>
 
-          let positions = [];
+							<div class="btn" style="display: flex; gap: 9px; justify-content: center">
+								<a href="https://github.com/DeveloperIgorM/Library-Findbooks" class="btn github" target="_blank">Github</a>
+								<a href="https://www.seusite.com.br" class="btn site" target="_blank">Site</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-          icons.forEach((icon, i) => {
-            const phi = Math.acos(-1 + (2 * i) / total);
-            const theta = Math.sqrt(total * Math.PI) * phi;
+		<section id="softskills">
+			<div class="skills-container">
+				<div class="header-skills">
+					<h2>Tecnologias que fazem parte da minha jornada</h2>
+					<h3>Meu conjunto de habilidades técnicas: linguagens, frameworks e ferramentas que uso para construir interfaces, arquiteturas e experiências digitais.</h3>
+				</div>
 
-            const x = radius * Math.sin(phi) * Math.cos(theta);
-            const y = radius * Math.sin(phi) * Math.sin(theta);
-            const z = radius * Math.cos(phi);
+				<div class="sphere-container">
+					<div class="sphere" id="iconCloud">
+						<i class="devicon-html5-plain colored" title="HTML"></i>
+						<i class="devicon-css3-plain colored" title="CSS"></i>
+						<i class="devicon-javascript-plain colored" title="JAVASCRIPT"></i>
+						<i class="devicon-typescript-plain colored" title="TYPESCRIPT"></i>
+						<i class="devicon-mysql-plain colored" title="MYSQL"></i>
+						<i class="devicon-python-plain colored" title="PYTHON"></i>
+						<i class="devicon-php-plain colored" title="PHP"></i>
+						<i class="devicon-csharp-plain colored" title="CSHARP"></i>
+						<i class="devicon-git-plain colored" title="GIT"></i>
+						<i class="devicon-angularjs-plain colored" title="ANGULAR"></i>
+						<i class="devicon-sqlite-plain colored" title="SQLITE"></i>
+						<i class="devicon-azure-plain colored" title="AZURE"></i>
+						<i class="devicon-github-plain colored" title="GITHUB"></i>
+					</div>
+				</div>
 
-            positions.push({ x, y, z });
-          });
+				<script>
+					const icons = document.querySelectorAll('#iconCloud i');
+					const sphere = document.getElementById('iconCloud');
+					const radius = 200;
+					const total = icons.length;
 
-          document.addEventListener("mousemove", (e) => {
-            const centerX = window.innerWidth / 2;
-            const centerY = window.innerHeight / 2;
-            mouseX = (e.clientX - centerX) / centerX;
-            mouseY = (e.clientY - centerY) / centerY;
-          });
+					let mouseX = 0,
+						mouseY = 0;
+					let angleX = 0;
+					let angleY = 0;
 
-          function rotate() {
-            const speed = 0.02;
-            const ax = mouseY * speed;
-            const ay = mouseX * speed;
+					let positions = [];
 
-            positions = positions.map((p) => {
-              // Rotate Y
-              let x = p.x * Math.cos(ay) - p.z * Math.sin(ay);
-              let z = p.z * Math.cos(ay) + p.x * Math.sin(ay);
+					icons.forEach((icon, i) => {
+						const phi = Math.acos(-1 + (2 * i) / total);
+						const theta = Math.sqrt(total * Math.PI) * phi;
 
-              // Rotate X
-              let y = p.y * Math.cos(ax) - z * Math.sin(ax);
-              z = z * Math.cos(ax) + p.y * Math.sin(ax);
+						const x = radius * Math.sin(phi) * Math.cos(theta);
+						const y = radius * Math.sin(phi) * Math.sin(theta);
+						const z = radius * Math.cos(phi);
 
-              return { x, y, z };
-            });
+						positions.push({ x, y, z });
+					});
 
-            positions.forEach((pos, i) => {
-              icons[
-                i
-              ].style.transform = `translate3d(${pos.x}px, ${pos.y}px, ${pos.z}px)`;
-            });
+					document.addEventListener('mousemove', (e) => {
+						const centerX = window.innerWidth / 2;
+						const centerY = window.innerHeight / 2;
+						mouseX = (e.clientX - centerX) / centerX;
+						mouseY = (e.clientY - centerY) / centerY;
+					});
 
-            requestAnimationFrame(rotate);
-          }
+					function rotate() {
+						const speed = 0.02;
+						const ax = mouseY * speed;
+						const ay = mouseX * speed;
 
-          rotate();
-        </script>
-      </div>
-    </section>
+						positions = positions.map((p) => {
+							// Rotate Y
+							let x = p.x * Math.cos(ay) - p.z * Math.sin(ay);
+							let z = p.z * Math.cos(ay) + p.x * Math.sin(ay);
 
-    <section id="contato">
-      <div class="contato-container">
-        <div class="title-contato">
-          <h1>Fale comigo!</h1>
-        </div>
+							// Rotate X
+							let y = p.y * Math.cos(ax) - z * Math.sin(ax);
+							z = z * Math.cos(ax) + p.y * Math.sin(ax);
 
-        <div class="phone">
-          <div class="mail">
-            <img
-              src="assets/images/icons/mail.png"
-              title="E-mail"
-              class="language-icon"
-            />
-            <p>igormatheus090807@gmail.com</p>
-          </div>
-          <div class="whats">
-            <img
-              src="assets/images/icons/whatsapp.png"
-              title="Whatsapp"
-              class="language-icon"
-            />
-            <p>+55 (15) 99722-7398</p>
-          </div>
-        </div>
-      </div>
-    </section>
+							return { x, y, z };
+						});
 
-    <button id="backToTop" class="back-to-top" title="Voltar ao topo">↑</button>
+						positions.forEach((pos, i) => {
+							icons[i].style.transform = `translate3d(${pos.x}px, ${pos.y}px, ${pos.z}px)`;
+						});
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const backToTopButton = document.getElementById("backToTop");
+						requestAnimationFrame(rotate);
+					}
 
-        window.addEventListener("scroll", function () {
-          if (window.scrollY > 300) {
-            backToTopButton.style.display = "flex";
-          } else {
-            backToTopButton.style.display = "none";
-          }
-        });
+					rotate();
+				</script>
+			</div>
+		</section>
 
-        backToTopButton.addEventListener("click", function () {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
+		<section id="contato">
+			<div class="contato-container">
+				<div class="title-contato">
+					<h1>Fale comigo!</h1>
+				</div>
 
-    <section id="footer">
-      <footer class="footer">
-        <div class="footer">
-          <ul>
-            <li>
-              <a href="#">𝒊𝒈&copy;2025</a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </section>
-    <script src="script.js"></script>
-  </body>
+				<div class="phone">
+					<div class="mail">
+						<img src="assets/images/icons/mail.png" title="E-mail" class="language-icon" />
+						<p>igormatheus090807@gmail.com</p>
+					</div>
+					<div class="whats">
+						<img src="assets/images/icons/whatsapp.png" title="Whatsapp" class="language-icon" />
+						<p>+55 (15) 99722-7398</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<button id="backToTop" class="back-to-top" title="Voltar ao topo">↑</button>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				const backToTopButton = document.getElementById('backToTop');
+
+				window.addEventListener('scroll', function () {
+					if (window.scrollY > 300) {
+						backToTopButton.style.display = 'flex';
+					} else {
+						backToTopButton.style.display = 'none';
+					}
+				});
+
+				backToTopButton.addEventListener('click', function () {
+					window.scrollTo({
+						top: 0,
+						behavior: 'smooth',
+					});
+				});
+			});
+		</script>
+
+		<section id="footer">
+			<footer class="footer">
+				<div class="footer">
+					<ul>
+						<li>
+							<a href="#">𝒊𝒈&copy;2025</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</section>
+		<script src="script.js"></script>
+		<!-- Bootstrap Bundle JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+	</body>
 </html>
