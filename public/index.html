@@ -24,31 +24,31 @@
 	<section id="header">
 		<nav class="navbar navbar-expand-lg fixed-top bg-transparent px-5">
 			<div class="container-fluid">
-				<a class="nav-logo" href="#">𝒊G</a>
-
+				<a class="nav-logo text-purple" href="#">𝒊G</a>
+		
 				<!-- Botão hamburguer -->
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
+		
 				<!-- Links -->
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto d-flex flex-column flex-lg-row  align-items-lg-center gap-2">
+					<ul class="navbar-nav ms-auto d-flex flex-column flex-lg-row align-items-lg-center gap-2">
 						<li class="nav-item">
-							<a class="nav-link fw-bold" href="#sobre">Sobre mim</a>
+							<a class="nav-link fw-bold text-white text-lg-dark" href="#sobre">Sobre mim</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-bold" href="#projetos">Projetos</a>
+							<a class="nav-link fw-bold text-white text-lg-dark" href="#projetos">Projetos</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-bold" href="#softskills">Habilidades</a>
+							<a class="nav-link fw-bold text-white text-lg-dark" href="#softskills">Habilidades</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link fw-bold" href="#contato">Fale comigo</a>
+							<a class="nav-link fw-bold text-white text-lg-dark" href="#contato">Fale comigo</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link fw-bold fs-5 cv-link" href="public/Cv_igor.pdf" download>CV</a>
-						</li>
+						<a class="nav-link fw-bold text-white text-lg-dark" href="/public/assets/Cv_igor.pdf" download>
+							<i class="fas fa-file-download"></i> CV
+						</a>
 					</ul>
 				</div>
 			</div>
@@ -104,24 +104,30 @@
 		</section>
 
 		<section id="sobre">
-			<div class="profile-container">
+			<div class="profile-container d-flex flex-column flex-lg-row align-items-center justify-content-evenly gap-5">
+
+				<!-- Imagem -->
 				<div class="profile-bg">
 					<img src="assets/images/me.jpg" alt="Perfil" class="profile-img" />
 				</div>
+
+				<!-- Texto -->
 				<div class="title-sobre">
 					<h2>Sobre mim</h2>
 					<p>Sou formado em Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor full-stack, com foco em desenvolvimento web. Iniciei minha trajetória na área de suporte técnico, onde desenvolvi organização e pensamento analítico para a resolução de problemas. Aos poucos, migrei para o desenvolvimento, adquirindo experiência no front-end e back-end. Atualmente, meu objetivo é me consolidar como desenvolvedor full-stack, com ênfase em back-end, aprofundando meus conhecimentos em Python. Acredito que a melhor forma de crescer profissionalmente é por meio de desafios, e cada projeto é uma oportunidade para evoluir e aprimorar minhas habilidades. Estou sempre em busca de novos desafios que me permitam expandir meu domínio em Python e fortalecer minha atuação como full-stack.</p>
 				</div>
 			</div>
 		</section>
-
+		
+		
 		<section id="projetos">
-			<div class="projetos-container">
-				<div class="title-projetos">
+			<div class="projetos-container d-flex flex-column flex-lg-column">
+				<div class="title-projetos col-12">
 					<h2>Projetos</h2>
 				</div>
-				<div class="card-projeto">
+				<div class="card-projeto d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4">
 					<div class="body-card-project">
+
 						<video autoplay muted loop playsinline>
 							<source src="assets/images/videos/find.mp4" type="video/mp4" />
 							Seu navegador não suporta vídeos.
@@ -157,7 +163,7 @@
 					<p>Meu conjunto de habilidades técnicas: linguagens, frameworks e ferramentas que uso para construir interfaces, arquiteturas e experiências digitais.</p>
 				</div>
 
-				<div class="sphere-container">
+				<!-- <div class="sphere-container">
 					<div class="sphere" id="iconCloud">
 						<i class="devicon-html5-plain colored" title="HTML"></i>
 						<i class="devicon-css3-plain colored" title="CSS"></i>
@@ -173,9 +179,9 @@
 						<i class="devicon-azure-plain colored" title="AZURE"></i>
 						<i class="devicon-github-plain colored" title="GITHUB"></i>
 					</div>
-				</div>
+				</div> -->
 
-				<script>
+				<!-- <script>
 					const icons = document.querySelectorAll('#iconCloud i');
 					const sphere = document.getElementById('iconCloud');
 					const radius = 200;
@@ -231,7 +237,7 @@
 					}
 
 					rotate();
-				</script>
+				</script> -->
 			</div>
 		</section>
 
