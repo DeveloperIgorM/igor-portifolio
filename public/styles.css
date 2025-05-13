@@ -320,13 +320,21 @@ section#projetos {
 
 .footer-card-project {
   max-width: 600px;
+  padding-top: 7em;
+}
+
+.footer-card-project ul li {
+  font-size: 18px;
+  line-height: 26px;
+  list-style: none;
+  margin-bottom: 1.5em;
 }
 .footer-card-project-2 {
   max-width: 600px;
 }
 
 .footer-card-project p {
-  margin-top: 2rem;
+  
   font-size: 18px;
   line-height: 26px;
   text-align: left;
@@ -334,12 +342,11 @@ section#projetos {
   margin-left: 1em;
 }
 .footer-card-project-2 p {
-  margin-top: 2rem;
   font-size: 18px;
   line-height: 26px;
   text-align: left;
   width: 100%;
-  margin-left: 1em;
+  margin-bottom: 2em;
 }
 
 .footer-language {
@@ -394,6 +401,9 @@ section#projetos {
 
 
 @media (max-width: 767px) {
+  .footer-card-project {
+    padding-top: 1em;
+  }
   .footer-card-project p {
     font-size: 16px;
     line-height: 24px;
@@ -401,6 +411,7 @@ section#projetos {
   .footer-card-project-2 p {
     font-size: 16px;
     line-height: 24px;
+  
   }
 }
 /* Inverte a ordem dos elementos apenas em telas grandes */
@@ -412,17 +423,48 @@ section#projetos {
 
 section#softskills {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   background-color: #17111d;
   padding: 4rem 2rem;
   box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 }
 
+.skill-box {
+  max-width: 300px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+
+.skill-box img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  background: linear-gradient(to bottom, #5e09d4, #130d1a);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.skill-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.skill-box p {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+
+
+
 .header-skills {
   text-align: center;
   margin-bottom: 4rem;
-  max-width: 700px;
+  /* max-width: 700px; */
 }
 
 .header-skills h2 {
@@ -443,7 +485,7 @@ section#softskills {
   justify-content: center;
   gap: 3rem;
   width: 100%;
-}
+} 
 
 /* .sphere-container {
   perspective: 1000px;
@@ -472,49 +514,57 @@ section#softskills {
   transition: transform 0.5s ease;
 } */
 
+/* Seção de Contato */
 section#contato {
-  .contato-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 70vh;
-
-    .phone {
-      display: flex;
-      flex-direction: column;
-      font-weight: 550;
-      gap: 10px;
-
-      .mail {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: flex-start;
-      }
-      .whats {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-      }
-      p {
-        margin: 0;
-      }
-    }
-    .language-icon {
-      max-width: 25px;
-      width: 100%;
-    }
-  }
-  .title-contato {
-    color: #a854fc;
-    font-size: 35px;
-    text-align: center;
-    /* margin: 7rem 0px 7rem 0px; */
-  }
+  height: 70vh;
 }
+
+.contato-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+/* Bloco de telefone e email */
+.contato-container .phone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 550;
+}
+
+.contato-container .phone .mail,
+.contato-container .phone .whats {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.contato-container .phone p {
+  margin: 0;
+  font-size: 22px;
+  color: #acacac;
+  line-height: 26px;
+}
+
+/* Ícone de linguagem */
+.language-icon {
+  max-width: 25px;
+  width: 100%;
+}
+
+/* Título da seção de contato */
+.title-contato {
+  color: #a854fc;
+  font-size: 35px;
+  text-align: center;
+  /* margin: 7rem 0px 7rem 0px; */ /* Descomente se necessário */
+}
+
 
 section#footer {
   display: flex;
@@ -545,8 +595,8 @@ section#footer {
   right: 35px;
   width: 50px;
   height: 50px;
-  background-color: #8661dd;
-  color: rgb(7, 7, 7);
+ background: linear-gradient(to bottom, #5e09d4, #130d1a);
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 50%;
   font-size: 24px;
@@ -559,7 +609,7 @@ section#footer {
 }
 
 .back-to-top:hover {
-  background-color: #6f37f1;
+  background-color: #6f37f1;background: linear-gradient(to bottom, #792fe1, #130d1a);
   transform: scale(1.1);
 }
 
