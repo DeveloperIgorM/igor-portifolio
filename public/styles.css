@@ -55,8 +55,13 @@ section#header .navbar-toggler-icon {
 }
 
 @media (max-width: 768px) {
-   .navbar {
-    background-color: rgba(0, 0, 0, 0.8) !important; /* cor escura com transparência */
+  .navbar {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ) !important; /* cor escura com transparência */
   }
 }
 
@@ -181,6 +186,8 @@ section#sobre {
   justify-content: space-evenly;
   background-color: #17111d;
   padding: 4rem 2rem;
+  height: 115vh;
+  margin-bottom: 4em;
   gap: 2rem;
 }
 
@@ -242,8 +249,8 @@ section#sobre {
   }
 
   .profile-img {
-    max-width: 300px;
-    max-height: 400px;
+    max-width: 250px;
+    max-height: 300px;
   }
 
   .title-sobre h2 {
@@ -277,7 +284,6 @@ section#projetos {
   color: #a854fc;
   font-size: 40px;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .projetos-container {
@@ -320,7 +326,6 @@ section#projetos {
 
 .footer-card-project {
   max-width: 600px;
-  padding-top: 7em;
 }
 
 .footer-card-project ul li {
@@ -334,7 +339,6 @@ section#projetos {
 }
 
 .footer-card-project p {
-  
   font-size: 18px;
   line-height: 26px;
   text-align: left;
@@ -394,11 +398,11 @@ section#projetos {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.btn.github:hover, .btn.site:hover {
+.btn.github:hover,
+.btn.site:hover {
   transform: scale(1.05);
   color: #fff;
 }
-
 
 @media (max-width: 767px) {
   .footer-card-project {
@@ -411,7 +415,6 @@ section#projetos {
   .footer-card-project-2 p {
     font-size: 16px;
     line-height: 24px;
-  
   }
 }
 /* Inverte a ordem dos elementos apenas em telas grandes */
@@ -428,6 +431,13 @@ section#softskills {
   background-color: #17111d;
   padding: 4rem 2rem;
   box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.container-skills {
+  max-width: 52em;
+  width: 100%;
+  gap: 37px;
+  flex-wrap: wrap;
 }
 
 .skill-box {
@@ -436,18 +446,43 @@ section#softskills {
   color: white;
   margin: 20px;
 }
+.skill-box-ex {
+  max-width: 300px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+.skill-bg {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(to bottom, #5e09d4, #130d1a);
+  border-radius: 50%;
+}
+
+.exception-icon {
+  max-width: 101px;
+  width: 100%;
+  margin-top: 27px;
+  margin-bottom: 2em;
+}
 
 .skill-box img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
-  background: linear-gradient(to bottom, #5e09d4, #130d1a);
-  padding: 10px;
-  border-radius: 50%;
+  width: 60px;
+  height: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.skill-box-ex h3 {
+  font-size: 1.5rem;
+  margin-top: 1em;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .skill-box h3 {
   font-size: 1.5rem;
+  margin-top: 1em;
   margin-bottom: 10px;
   font-weight: bold;
 }
@@ -458,13 +493,8 @@ section#softskills {
   line-height: 1.5;
 }
 
-
-
-
 .header-skills {
   text-align: center;
-  margin-bottom: 4rem;
-  /* max-width: 700px; */
 }
 
 .header-skills h2 {
@@ -485,7 +515,40 @@ section#softskills {
   justify-content: center;
   gap: 3rem;
   width: 100%;
-} 
+}
+
+@media (max-width: 767px) {
+  .container-skills {
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 4rem;
+  }
+  .skill-box {
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+  }
+  .skill-box-ex {
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+  }
+
+  .skill-box-ex {
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+  }
+  .skill-bg {
+    width: 135px;
+    height: 135px;
+    background: linear-gradient(to bottom, #5e09d4, #130d1a);
+    border-radius: 50%;
+  }
+}
 
 /* .sphere-container {
   perspective: 1000px;
@@ -560,11 +623,19 @@ section#contato {
 /* Título da seção de contato */
 .title-contato {
   color: #a854fc;
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
   /* margin: 7rem 0px 7rem 0px; */ /* Descomente se necessário */
 }
 
+@media (max-width: 767px) {
+  .contato-container .phone p {
+    margin: 0;
+    font-size: 21px;
+    color: #acacac;
+    line-height: 26px;
+  }
+}
 
 section#footer {
   display: flex;
@@ -595,7 +666,7 @@ section#footer {
   right: 35px;
   width: 50px;
   height: 50px;
- background: linear-gradient(to bottom, #5e09d4, #130d1a);
+  background: linear-gradient(to bottom, #5e09d4, #130d1a);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 50%;
@@ -609,7 +680,8 @@ section#footer {
 }
 
 .back-to-top:hover {
-  background-color: #6f37f1;background: linear-gradient(to bottom, #792fe1, #130d1a);
+  background-color: #6f37f1;
+  background: linear-gradient(to bottom, #792fe1, #130d1a);
   transform: scale(1.1);
 }
 
