@@ -1,4 +1,4 @@
-Reset e configurações globais * {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -73,10 +73,10 @@ section#intro {
 
 section#intro .intro-container .intro {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	height: 110vh;
-	margin-top: 3rem;
+	margin-top: 1em;
 	box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -167,6 +167,14 @@ section#intro .intro-container .intro {
 	#typed {
 		font-size: 27px;
 	}
+
+	.wave-bg {
+		width: 315px;
+		height: 315px;
+		/* top: 40%;
+	background: linear-gradient(to bottom, #5e09d4, #130d1a);
+	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 90%); */
+	}
 }
 
 section#sobre {
@@ -181,7 +189,7 @@ section#sobre {
 	justify-content: space-evenly;
 	background-color: #17111d;
 	padding: 4rem 2rem;
-	height: 115vh;
+	height: 145vh;
 	margin-bottom: 4em;
 	gap: 2rem;
 }
@@ -302,7 +310,7 @@ section#projetos {
 }
 
 .body-card-project {
-	padding-bottom: 3em;
+	padding-bottom: 6em;
 }
 
 .body-card-project img {
@@ -335,7 +343,7 @@ section#projetos {
 	font-size: 18px;
 	line-height: 26px;
 	list-style: none;
-	/* margin-bottom: 1.5em; */
+	margin-bottom: 1.5em;
 }
 .footer-card-project-2 {
 	max-width: 600px;
@@ -346,7 +354,7 @@ section#projetos {
 	line-height: 26px;
 	text-align: left;
 	width: 100%;
-  margin: 28px 0px 14px 1em
+	margin-left: 1em;
 }
 .footer-card-project-2 p {
 	font-size: 18px;
@@ -410,7 +418,9 @@ section#projetos {
 	.body-card-project {
 		padding: 0;
 	}
-
+	.footer-card-project {
+		padding-top: 1em;
+	}
 	.footer-card-project p {
 		font-size: 16px;
 		line-height: 24px;
@@ -432,7 +442,7 @@ section#softskills {
 	flex-wrap: wrap;
 	align-items: center;
 	background-color: #17111d;
-	padding: 4rem 2rem;
+	padding: 4em 1em;
 	box-shadow: 15px 11px 15px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
 }
@@ -440,7 +450,6 @@ section#softskills {
 .full-width-card {
 	width: 100%;
 	display: flex;
-	padding: 0 6rem;
 	align-items: flex-start;
 	justify-content: center;
 	overflow: hidden;
@@ -459,10 +468,13 @@ section#softskills {
 }
 
 .container-skills {
-	max-width: 70em;
+	max-width: 60em;
 	width: 100%;
 	gap: 37px;
+	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 4em;
 }
 
 .skill-box {
@@ -522,6 +534,7 @@ section#softskills {
 
 .header-skills {
 	text-align: center;
+	padding: 0 6em;
 }
 
 .header-skills h2 {
@@ -549,9 +562,9 @@ section#softskills {
 	align-items: center;
 	gap: 2rem;
 	color: white;
-	border-radius: 12px;
 	max-width: 1200px;
 	flex-direction: column;
+	margin: 0;
 }
 
 .skill-box.api-rest .icon-title {
@@ -570,7 +583,7 @@ section#softskills {
 }
 
 .skill-box.api-rest img {
-	width: 55px;
+	width: 60px;
 	height: auto;
 	margin: 0;
 }
@@ -594,10 +607,16 @@ section#softskills {
 
 @media (max-width: 767px) {
 	.container-skills {
-    display: flex;
 		flex-wrap: wrap;
-		gap: 0;
 		row-gap: 4rem;
+		display: flex;
+		justify-content: center;
+		width: 22em;
+	}
+
+	.header-skills {
+		text-align: center;
+		padding: 0;
 	}
 	.skill-box {
 		max-width: 300px;
@@ -619,26 +638,11 @@ section#softskills {
 		margin: 20px;
 	}
 	.skill-bg {
-		width: 135px;
-		height: 135px;
+		width: 110px;
+		height: 110px;
 		background: linear-gradient(to bottom, #5e09d4, #130d1a);
 		border-radius: 50%;
 	}
-
-  .skill-box.api-rest {
-	display: flex;
-	align-items: center;
-	gap: 2rem;
-	color: white;
-	border-radius: 12px;
-	max-width: 1200px;
-	flex-direction: column;
-}
-  
-.full-width-card {
-	padding: 0 1em;
-
-}
 }
 
 /* .sphere-container {
@@ -707,7 +711,7 @@ section#contato {
 
 /* Ícone de linguagem */
 .language-icon {
-	max-width: 30px;
+	max-width: 25px;
 	width: 100%;
 }
 
@@ -722,9 +726,17 @@ section#contato {
 @media (max-width: 767px) {
 	.contato-container .phone p {
 		margin: 0;
-		font-size: 21px;
+		font-size: 15px;
 		color: #acacac;
 		line-height: 26px;
+	}
+
+	.contato-container {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
 	}
 }
 
