@@ -189,9 +189,9 @@ section#sobre {
 	justify-content: space-evenly;
 	background-color: #17111d;
 	padding: 4rem 2rem;
-	height: 145vh;
+	height: 114vh;
 	margin-bottom: 4em;
-	gap: 2rem;
+	gap: 1em;
 }
 
 .profile-img {
@@ -252,8 +252,8 @@ section#sobre {
 	}
 
 	.profile-img {
-		max-width: 250px;
-		max-height: 300px;
+		max-width: 290px;
+		max-height: 310px;
 	}
 
 	.title-sobre h2 {
